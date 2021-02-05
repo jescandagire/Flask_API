@@ -26,7 +26,7 @@ def predict():
     # labelencoder = LabelEncoder()
 
 #for farm size
-    farm_size = request_json['farm_size']
+    farm_size = float(request_json['farm_size'])
     farm_size = np.log10(farm_size)
     farm_size = round(farm_size, 1)
     data_list.append(farm_size)
